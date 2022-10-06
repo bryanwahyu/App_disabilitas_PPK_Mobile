@@ -14,11 +14,10 @@ import {
 
 const Stack = createStackNavigator()
 
-export class App extends Component {
-  render () {
-    useEffect( ()=> {
+const App = () => {
+    useEffect( () => {
       SplashScreen.hide();
-    }, [])
+    }, []);
     return (
       <View>
         <Text>
@@ -26,7 +25,6 @@ export class App extends Component {
         </Text>
       </View>
     )
-  }
 }
 
 export default App;
